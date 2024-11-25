@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Header{
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header ul{
+    width: 45%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header a{
+    color: white;
+}
+
+.Header a:hover{
+    color: gold;
+    font-size: 115%;
+}
+
+.Header a:active{
+    color: red;
+}
+
+.Header_Pesquisa{
+    height:100%;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header_Pesquisa input{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.Header_Pesquisa input[type="text"]{
+    height: 30%;
+    width: 50%;
+    min-width: 100px;
+}
+
+.Header_Pesquisa input[type="text"]:focus{
+    outline: 1px solid gold;
+}
+
+.Header_Pesquisa input[type="text"]:disabled{
+    outline: 1px solid red;
+}
+
+.Header_Pesquisa input[type="button"]{
+    height: 25%;
+    width: 15%;
+    min-width: 50px;
+    margin-left: 0.5%;
+    overflow: hidden;
+}
+
+.Header_Pesquisa input[type="button"]:hover{
+    outline: 2px solid gold;
+}
+
+.Header_Pesquisa input[type="button"]:active{
+    background-color: gold;
+    color: black;
+    border: none;
+}
+
+@media screen and (max-width: 700px) {
+    .Header ul{
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        font-size: x-small;
+    }
+
+    .Header_Pesquisa{
+        flex-direction: column;
+    }
+}
