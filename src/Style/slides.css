@@ -1,0 +1,125 @@
+
+.Slide_1, .Slide_2, .Slide_3{
+    height: 100%;
+    color: white;
+}
+
+.Slide_1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 217, 0, 0.3)), url("../Assets/Space.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Outro método para colocar um filtro sobre o plano de fundo
+.Slide_1::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 217, 0, 1))
+} */
+
+.Slide_1_button{
+    color: white;
+    border: 3px solid gold;
+}
+
+.Slide_1_button:hover{
+    outline: 2px solid red;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 217, 0, 0.7));
+    cursor: pointer;
+}
+
+.Slide_1_button:active{
+    background: linear-gradient(rgba(255, 217, 0, 0.7), rgba(0, 0, 0, 1));
+}
+
+.Slide_2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 100, 255, 0.5)), url("../Assets/Space_Battle.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.Slide_2_button{
+    color: white;
+    border: 3px solid rgb(0, 100, 255);
+}
+
+.Slide_2_button:hover{
+    outline: 2px solid black;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 100, 255, 0.7));
+}
+
+.Slide_2_button:active{
+    background: linear-gradient(rgba(0, 100, 255, 0.7), rgba(0, 0, 0, 1));
+}
+
+.Slide_3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 100, 0, 0.5)), url("../Assets/Dragon.png");
+    background-size: cover;
+}
+
+.Slide_3_button{
+    border: 3px solid rgb(255, 90, 0);
+}
+
+.Slide_3_button:hover{
+    outline: 2px solid white;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 100, 0, 0.7));
+}
+
+.Slide_3_button:active{
+    background: linear-gradient(rgba(255, 100, 0, 0.7), rgba(0, 0, 0, 1));
+}
+
+.Slide_title{
+    height: 10%;
+    font-size: xx-large;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.Slide_title h1{
+    margin: 0px;
+}
+
+.Slide_desc{
+    height: 65%;
+    padding-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Slide_button_conteiner{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Slide_button_conteiner button{
+    height: 50%;
+    width: 15%;
+    background-color: transparent;
+    border-radius: 15px;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .Slide_button_conteiner button{
+        width: 15vw;
+    }
+}

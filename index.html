@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Projeto_01</title>
-        <link rel="stylesheet" href="./Style/reader.css"> <!--Link do arquivo css para o reader-->
-        <link rel="stylesheet" href="./Style/home.css"> <!--Link css da página-->
-        <link rel="stylesheet" href="./Style/footer.css"> <!--Link do arquivo css para o footer-->
+        <link rel="stylesheet" href="./src/Style/reader.css"> <!--Link do arquivo css para o reader-->
+        <link rel="stylesheet" href="./src/Style/home.css"> <!--Link css da página-->
+        <link rel="stylesheet" href="./src/Style/slides.css"> <!--css para os slides em "Home_1"-->
+        <link rel="stylesheet" href="./src/Style/footer.css"> <!--Link do arquivo css para o footer-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para o navegador reconhecer o tamanho da tela-->
     </head>
 
@@ -21,12 +23,93 @@
         </section>
         <section>
             <section class="Home_1">
-                <div class="Home_1_seta"></div> <!--Aqui a seta para ir para a esquerda-->
-                <div class="Home_1_main"> <!--Aqui a parte principal de Home_1-->
-                    <div class="Home_1_desc"></div> <!--Aqui o texto-->
-                    <div class="Home_1_botao"></div> <!--Aqui o botão (de saiba mais, por exemplo)-->
-                </div>
-                <div class="Home_1_seta"></div> <!--Aqui a seta para ir para a direita-->
+                <button class="Right" onclick="nextSlide()"><h1>&#10095</h1></button>
+                <section class="Home_slides"> <!--Aqui é onde vão os slides-->
+                    <section class="Slide_1">
+                        <div class="Slide_title">
+                            <h1>Item 1</h1>
+                        </div>
+                        <div class="Slide_desc">  <!--Não pode ser "section", para o conteúdo não ser ocultado-->
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ornare nisi nisl, ac sollicitudin turpis facilisis ut.
+                                Vivamus rhoncus lobortis ligula sed luctus. Vivamus ut hendrerit ligula, vel dictum tortor. Aenean consequat felis mauris.
+                                Pellentesque arcu arcu, rutrum vel sodales non, iaculis id sem. Nullam imperdiet nibh id aliquet varius.
+                                Nunc auctor urna id ligula iaculis ornare. Etiam commodo tincidunt tellus, et laoreet massa interdum et.
+                                Morbi non posuere neque. Duis tristique enim nibh, rhoncus sollicitudin tellus semper non.
+                            </p>
+                            <p>
+                                Pellentesque hendrerit auctor urna, et faucibus sapien ultricies sed. Vivamus a justo aliquet, vulputate orci hendrerit, laoreet ante.
+                                Curabitur commodo, enim eu ultricies faucibus, tortor libero aliquet turpis, in venenatis nunc diam sed diam.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin tempor interdum dignissim.
+                                Suspendisse feugiat lacinia ullamcorper. Pellentesque tristique purus quis nisi pellentesque lacinia. Sed quis pharetra urna, porta dapibus ipsum.
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas eos molestiae maxime cumque expedita enim esse dignissimos quaerat soluta error nulla hic,
+                                incidunt ad doloribus recusandae quis sapiente assumenda numquam!
+                            </p>
+                        </div>
+                        <div class="Slide_button_conteiner">
+                            <button class="Slide_1_button"><h1>Item 01</h1></button>
+                        </div>
+                    </section>
+                    <section class="Slide_2">
+                        <div class="Slide_title">
+                            <h1>Item 2</h1>
+                        </div>
+                        <div class="Slide_desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a interdum sem, quis tincidunt ligula. Mauris ullamcorper tempor purus.
+                                Vestibulum at odio quis tortor mollis tristique.Suspendisse fermentum non risus nec eleifend. Quisque ut malesuada sem, quis imperdiet mauris.
+                                Nullam ultrices lacus ac efficitur tempus. Maecenas ut libero laoreet, tincidunt nulla non, eleifend neque.
+                                Proin finibus sapien tellus, fringilla sodales enim faucibus in. 
+                            </p>
+                            <p>
+                                Cras sollicitudin facilisis risus sit amet malesuada. Fusce aliquam tempor rhoncus. Mauris eget dapibus orci. Donec faucibus dolor quis molestie rutrum.
+                                Phasellus et congue ligula. Nullam varius pellentesque ligula vel consequat. Donec neque massa, hendrerit in molestie vitae, vehicula eu turpis.
+                                Maecenas ornare rhoncus lorem. Aliquam tempor eros ac leo pharetra tempor. Etiam sit amet blandit mi, vitae ornare metus.
+                            </p>
+                            <p>
+                                Aenean lobortis dui in sem pretium hendrerit. Nunc ultrices, augue id scelerisque finibus, felis nulla pharetra dolor, nec tempus tortor leo ac augue.
+                                Ut lacinia lacinia neque eu elementum. Mauris imperdiet, est et mattis fringilla, nisl est laoreet dolor, non maximus est odio sit amet leo.
+                                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget nunc ut ex blandit vestibulum sed sed nulla.
+                                Donec felis ligula, porttitor id commodo a, sagittis in libero. Nunc in ante vitae velit venenatis semper.
+                                Duis tincidunt justo tellus, quis tincidunt ligula congue ac. Curabitur vitae tortor aliquet, bibendum enim sit amet, porta nulla.
+                                Fusce quis leo luctus orci bibendum lacinia et lacinia augue. Suspendisse feugiat nibh iaculis, suscipit dolor luctus, laoreet libero.
+                                Duis euismod, ex vel porttitor sagittis, ante turpis laoreet dui, a dapibus nisl turpis ut nunc. Vivamus vitae eleifend urna, ac rhoncus est.
+                                Donec gravida mauris vitae ex porttitor sodales. Phasellus semper justo ligula, sit amet rutrum felis tincidunt mollis. 
+                            </p>
+                        </div>
+                        <div class="Slide_button_conteiner">
+                            <button class="Slide_2_button"><h1>Item 02</h1></button>
+                        </div>
+                    </section>
+                    <section class="Slide_3">
+                        <div class="Slide_title">
+                            <h1>Item 3</h1>
+                        </div>
+                        <div class="Slide_desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed efficitur est. Praesent feugiat eget turpis vel auctor.
+                                Donec porttitor libero leo, eu mattis velit luctus ac. Mauris porta urna augue. Morbi congue orci et lacinia porttitor.
+                                Sed in metus arcu. Phasellus malesuada justo et erat congue, ut placerat erat maximus. Fusce tincidunt nunc consectetur, tempor ex at, fermentum nunc.
+                                Proin dignissim velit nec vulputate vehicula. Duis elementum leo nulla, ut imperdiet diam dictum in.
+                                Etiam et iaculis risus, ut suscipit arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                Maecenas ullamcorper massa sed neque sodales pretium. </p>
+                            <p>Maecenas porttitor ipsum dolor, eu porta quam auctor nec. Donec condimentum velit vitae elit fermentum dignissim.
+                                Mauris dolor turpis, luctus ut iaculis eget, vestibulum ac mauris. Morbi tortor erat, varius in malesuada at, porttitor eu nisi.
+                                Nulla in malesuada eros. Sed dapibus tortor eget turpis placerat, eget gravida nisi tincidunt.
+                                Ut luctus metus ut egestas ullamcorper. Morbi sed consectetur massa. </p>
+                            <p>Aliquam magna justo, accumsan id velit quis, lacinia sollicitudin urna. Nulla vel eleifend nibh.
+                                Ut gravida vitae sapien nec aliquet. Vivamus mattis elit non enim vestibulum, at blandit ligula porta.
+                                Nam dictum venenatis elit vel varius. Nulla sit amet arcu eget odio fermentum placerat.
+                                Nulla mollis id libero in eleifend. Maecenas ante arcu, dapibus ac ex in, fringilla mollis mi.
+                                Vivamus tempus dictum tincidunt. Aenean eget tellus enim. </p>
+                        </div>
+                        <div class="Slide_button_conteiner">
+                            <button class="Slide_3_button"><h1>Item 03</h1></button>
+                        </div>
+                    </section>
+                </section>
+                <button class="Left" onclick="previousSlide()"><h1>&#10094</h1></button>
             </section>
             <sectio class="Home_2">
                 <div class="Home_2_tabela">
@@ -38,11 +121,16 @@
                         </tr>
                         <tr>
                             <td>Item 01</td>
-                            <td>Item 02</td>
-                            <td>Item 03</td>
+                            <td>O_O</td>
+                            <td>0-0</td>
                         </tr>
                         <tr>
-                            <td>O-O</td>
+                            <td>item 2</td>
+                            <td>O_O</td>
+                            <td>0-0</td>
+                        </tr>
+                        <tr>
+                            <td>item 3</td>
                             <td>O_O</td>
                             <td>0-0</td>
                         </tr>
@@ -79,5 +167,6 @@
         <section class="Footer">
             <h3>Dummy website made just to practice</h3>
         </section>
+        <script src="src/Scripts/index.js"></script>
     </body>
 </html>

@@ -80,6 +80,7 @@ body{
 
 .Header_Pesquisa input[type="button"]:hover{
     outline: 2px solid gold;
+    cursor: pointer;
 }
 
 .Header_Pesquisa input[type="button"]:active{

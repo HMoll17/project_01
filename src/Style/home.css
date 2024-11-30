@@ -1,0 +1,139 @@
+.Home_1{
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.Home_slides{
+    height: 100%;
+    overflow: hidden;
+}
+
+.Home_slides section{
+    display: none; /*Oculta todas as "section" dentro de "Home_slides"*/
+}
+
+section.Display_slide{
+    display: block;
+}
+
+.Right, .Left{
+    position: absolute; /*Para o botão ser renderizado em cima do slide*/
+    z-index: 3; /* Garante que o botão esteja "por cima" do slide*/
+    top: 50%; /*faz com que a perte de cima do botão fique na metade do slide*/
+    transform: translateY(-50%) rotate(-45deg);
+    /*"transform: translateY(-X%)"faz o botão ir o equivalente à X% de sua altura para cima no eixo Y. O "rotate(X deg)" rotaciona
+    o elemento em X graus, deve estar após o "translateY()" pois o eixo y considerado é o do
+    elemento*/
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+    font-size: xx-large;
+    border: none;
+    border-radius: 15px;
+    width: 10%;
+    aspect-ratio: 1/1; /*Faz com que a altura seja igual a largura (funciona apenas para navegadores mais modernos, agora em 2024)*/
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Right:hover, .Left:hover{
+    background-color: rgba(50, 50, 50, 0.75);
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.Right{
+    right: 5%; /*Para ficar a direita*/
+}
+
+.Right h1{
+    rotate: 45deg; /*Rotaciona o "h1" dentro do botão para anular a rotação do mesmo*/
+}
+
+.Left{
+    left: 3%; /*Para ficar a esquerda*/
+}
+
+.Left h1{
+    rotate: 45deg;
+}
+
+.Home_2{
+    height: fit-content;
+    min-height: 700px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.Home_2_tabela{
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home_2_tabela table{
+    height: 70%;
+    width: 70%;
+    color: white;
+    border-collapse: collapse;
+    border: 5px solid white
+}
+
+.Home_2_tabela th{
+    text-align: center;
+    border: 5px solid white;
+}
+
+.Home_2_tabela td{
+    text-align: center;
+    border: 3px solid white;
+}
+
+.Home_2_tabela th:hover{
+    background-color: gold;
+    color: black;
+}
+
+.Home_2_tabela td:hover{
+    background-color: gold;
+    color: red;
+}
+
+.Home_2_desc{
+    width: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    font-size: larger;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+    .Home_2{
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .Home_2_tabela{
+        height: 50%;
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .Home_2_desc{
+        height: 50%;
+        width: 94%; /*100% - 6%, para não sair dos limites por causa dos 3% padding dos dois lados*/
+    }
+}
