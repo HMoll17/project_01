@@ -60,6 +60,7 @@
 .Slide_3{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 100, 0, 0.5)), url("../Assets/Dragon.png");
     background-size: cover;
+    background-position: center;
 }
 
 .Slide_3_button{
@@ -122,4 +123,5 @@
     .Slide_button_conteiner button{
         width: 15vw;
     }
+
 }
