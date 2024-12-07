@@ -1,0 +1,25 @@
+.Time{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    height: 50px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .Time{
+        position: static;
+        width: auto;
+        background-color: black;
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

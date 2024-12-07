@@ -5,7 +5,7 @@
 }
 
 .Slide_1{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 217, 0, 0.3)), url("../Assets/Space.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 217, 0, 0.3)), url("../../Assets/Space.png");
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +38,7 @@
 }
 
 .Slide_2{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 100, 255, 0.5)), url("../Assets/Space_Battle.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 100, 255, 0.5)), url("../../Assets/Space_Battle.webp");
     background-size: cover;
     background-position: center;
 }
@@ -58,7 +58,7 @@
 }
 
 .Slide_3{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 100, 0, 0.5)), url("../Assets/Dragon.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 100, 0, 0.5)), url("../../Assets/Dragon.png");
     background-size: cover;
     background-position: center;
 }

@@ -1,5 +1,8 @@
 .Main{
     position: relative;
+    color: white;
+    background-color: black;
+    min-height: 100vh;
 }
 
 .Home_1{
@@ -124,16 +127,6 @@ section.Display_slide{
     justify-content: space-between;
 }
 
-.Home_time{
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    height: 50px;
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
-
 @media screen and (max-width: 700px) {
     .Left, .Right{
         border-radius: 7px;
@@ -153,15 +146,5 @@ section.Display_slide{
     .Home_2_desc{
         height: 50%;
         width: 94%; /*100% - 6%, para não sair dos limites por causa dos 3% padding dos dois lados*/
-    }
-
-    .Home_time{
-        position: static;
-        width: 100vw;
-        background-color: black;
-        border-top: 2px solid white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }

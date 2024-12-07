@@ -2,9 +2,11 @@
 <html>
     <head>
         <title>Projeto_01</title>
+        <link rel="icon" href="./src/Assets/Space.png" type="image/x-icon">  <!--ícone do website.-->
         <link rel="stylesheet" href="./src/Style/reader.css"> <!--Link do arquivo css para o reader-->
-        <link rel="stylesheet" href="./src/Style/home.css"> <!--Link css da página-->
-        <link rel="stylesheet" href="./src/Style/slides.css"> <!--css para os slides em "Home_1"-->
+        <link rel="stylesheet" href="./src/Style/Home/home.css"> <!--Link css da página-->
+        <link rel="stylesheet" href="./src/Style/Home/slides.css"> <!--css para os slides em "Home_1"-->
+        <link rel="stylesheet" href="./src/Style/clock.css">
         <link rel="stylesheet" href="./src/Style/footer.css"> <!--Link do arquivo css para o footer-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para o navegador reconhecer o tamanho da tela-->
     </head>
@@ -12,7 +14,7 @@
     <body>
         <section class="Header">
             <ul>
-                <li><h1><a href="">Item 1</a></h1></li>
+                <li><h1><a href="./src/Pages/page1.html">Item 1</a></h1></li>
                 <li><h1><a href="">Item 2</a></h1></li>
                 <li><h1><a href="">Item 3</a></h1></li>
             </ul>
@@ -163,13 +165,14 @@
                     </p>
                 </div>
             </section>
-            <section class="Home_time">
-                <h3>Data: <span id="HomeDate">00:00:00 00/00/0000</span></h3>
+            <section class="Time">
+                <h3>Data: <span id="Clock">00:00:00 00/00/0000</span></h3>
             </section>
         </section>
         <section class="Footer">
             <h1>Dummy website made just to practice</h1>
         </section>
-        <script src="./src/Scripts/index.js"></script>
+        <script src="./src/Scripts/slides.js"></script>
+        <script src="./src/Scripts/clock.js"></script>
     </body>
 </html>
