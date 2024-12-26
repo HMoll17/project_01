@@ -15,12 +15,12 @@
         <section class="Header">
             <ul>
                 <li><h1><a href="./src/Pages/page1.html">Item 1</a></h1></li>
-                <li><h1><a href="">Item 2</a></h1></li>
-                <li><h1><a href="">Item 3</a></h1></li>
+                <li><h1><a href="./src/Pages/page2.html">Item 2</a></h1></li>
+                <li><h1><a href="./src/Pages/page3.html">Item 3</a></h1></li>
             </ul>
             <div class="Header_Pesquisa">
-                <input type="text" name="" id="" placeholder="Search here">
-                <input type="button" value="Search">
+                <input type="text" name="SearchBar" id="SearchBar" placeholder="Search here">
+                <input type="button" value="Search" onclick="searchHeader()">
             </div>
         </section>
         <section class="Main">
@@ -51,7 +51,7 @@
                             </p>
                         </div>
                         <div class="Slide_button_conteiner">
-                            <button class="Slide_1_button"><h1>Item 01</h1></button>
+                            <button class="Slide_1_button" onclick="window.location.href='./src/Pages/page1.html'"><h1>Item 01</h1></button>
                         </div>
                     </section>
                     <section class="Slide_2">
@@ -82,7 +82,7 @@
                             </p>
                         </div>
                         <div class="Slide_button_conteiner">
-                            <button class="Slide_2_button"><h1>Item 02</h1></button>
+                            <button class="Slide_2_button" onclick="window.location.href='./src/Pages/page2.html'"><h1>Item 02</h1></button>
                         </div>
                     </section>
                     <section class="Slide_3">
@@ -107,7 +107,7 @@
                                 Vivamus tempus dictum tincidunt. Aenean eget tellus enim. </p>
                         </div>
                         <div class="Slide_button_conteiner">
-                            <button class="Slide_3_button"><h1>Item 03</h1></button>
+                            <button class="Slide_3_button" onclick="window.location.href='./src/Pages/page3.html'"><h1>Item 03</h1></button>
                         </div>
                     </section>
                 </section>
@@ -172,6 +172,7 @@
         <section class="Footer">
             <h1>Dummy website made just to practice</h1>
         </section>
+        <script src="./src/Scripts/searchHeader.js"></script>
         <script src="./src/Scripts/slides.js"></script>
         <script src="./src/Scripts/clock.js"></script>
     </body>

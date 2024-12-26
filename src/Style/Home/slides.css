@@ -51,6 +51,7 @@
 .Slide_2_button:hover{
     outline: 2px solid black;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 100, 255, 0.7));
+    cursor: pointer;
 }
 
 .Slide_2_button:active{
@@ -70,6 +71,7 @@
 .Slide_3_button:hover{
     outline: 2px solid white;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 100, 0, 0.7));
+    cursor: pointer;
 }
 
 .Slide_3_button:active{

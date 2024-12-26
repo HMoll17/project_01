@@ -1,72 +1,103 @@
-.Main{
-    position: relative;
-    padding-left: 7%;
-    padding-right: 7%;
-    background: url("../../Assets/Space.png");
+.MainBackground{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/Space_Battle.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
-    min-height: 100vh;
-}
-
-.MainContent{
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
+.Main{
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+.Titulo h1{
+    font-size: 3em;
+    margin: 0px;
+    color: white
+}
+
+.Image1{
+    height: 500px;
+    width: 70%;
+    color: white;
+    overflow: hidden;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Image1 img{
+    height: 100%;
+}
+
 .Desc1{
+    width: 100%;
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
 }
 
 .Desc1Img{
     width: 50%;
     color: white;
     overflow: hidden;
-    border-radius: 30px;
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.Desc1Img img{
+    width: 90%;
+    border-radius: 15px;
 }
 
 .Desc1Txt{
-    overflow: scroll;
     width: 45%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    color: white;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .Desc2{
-    overflow: hidden;
+    margin-top: 30px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color: white;
+    text-align: center;
 }
 
 .More{
     height: 250px;
+    width: 100%;
     margin-top: 30px;
-    border-top: 2px solid white;
-    overflow: hidden;
+    border-top: 3px solid white;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .MoreItem{
     height: 100%;
     width: 50%;
-    overflow: hidden;
     display: flex;
-    align-items: center;
 }
 
 .MoreItemImg{
     height: 100%;
-    width: 50%;
+    width: 60%;
     color: white;
     border-radius: 30px;
     overflow: hidden;
@@ -75,24 +106,27 @@
     justify-content: center;
 }
 
-.MoreItemTitle{
+.MoreItemImg img{
     height: 100%;
-    width: 50%;
+}
+
+.MoreItemLink{
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.MoreItemTitle a{
+.MoreItemLink a{
     color: white;
 }
 
-.MoreItemTitle a:hover{
+.MoreItemLink a:hover{
     font-size: 1.5em;
     color: gold;
 }
 
-.MoreItemTitle a:active{
+.MoreItemLink a:active{
     color: red;
 }
 
@@ -101,7 +135,7 @@
         flex-direction: column-reverse;
     }
 
-    .Desc1Img{
+    .Desc1Img{ 
         width: 100%;
     }
 
@@ -111,25 +145,21 @@
 
     .More{
         height: 500px;
-        border: none;
         flex-direction: column;
-        justify-content: space-between;
     }
-    
+
     .MoreItem{
-        height: 49%;
+        height: 50%;
         width: 100%;
-        border-top: 2px solid white;
         flex-direction: column-reverse;
     }
 
     .MoreItemImg{
-        height: 80%;
+        height: 75%;
         width: 100%;
     }
 
-    .MoreItemTitle{
-        height: 20%;
+    .MoreItemLink{
         width: 100%;
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Página_01</title>
+        <title>Página 01</title>
         <link rel="icon" type="image/x-icon" href="../Assets/Space.png" />
         <link rel="stylesheet" href="../Style/reader.css" />
         <link rel="stylesheet" href="../Style/Pagina1/pagina1.css" />
@@ -13,12 +13,12 @@
         <section class="Header">
             <ul>
                 <li><h1><a href="../../index.html">Home</a></h1></li>
-                <li><h1><a href="">Item 2</a></h1></li>
-                <li><h1><a href="">Item 3</a></h1></li>
+                <li><h1><a href="./page2.html">Item 2</a></h1></li>
+                <li><h1><a href="./page3.html">Item 3</a></h1></li>
             </ul>
             <div class="Header_Pesquisa">
-                <input type="text" name="" id="" placeholder="Search here">
-                <input type="button" value="Search">
+                <input type="text" name="SearchBar" id="SearchBar" placeholder="Search here">
+                <input type="button" value="Search" onclick="searchHeader()">
             </div>
         </section>
         <section class="Main">
@@ -27,7 +27,7 @@
                     <h1 style="margin: 0%; font-size: 3em;">Item 1</h1>
                 </div>
                 <div style="display: flex; justify-content: center;">
-                    <img src="../Assets/Space.png" alt="Space" style="border-radius: 30px;">
+                    <img src="../Assets/Space.png" alt="Space" style="border-radius: 30px; color: white;">
                 </div>
                 <div class="Desc1">
                     <div class="Desc1Img">
@@ -110,7 +110,7 @@
                             <img src="../Assets/Space_Battle.webp" alt="Space Battle">
                         </div>
                         <div class="MoreItemTitle">
-                            <a href=""><h1>Item 2</h1></a>
+                            <a href="./page2.html"><h1>Item 2</h1></a>
                         </div>
                     </div>
                     <div class="MoreItem">
@@ -118,7 +118,7 @@
                             <img src="../Assets/Dragon.png" alt="Dragon">
                         </div>
                         <div class="MoreItemTitle">
-                            <a href=""><h1>Item 3</h1></a>
+                            <a href="./page3.html"><h1>Item 3</h1></a>
                         </div>
                     </div>
                 </div>
@@ -130,6 +130,7 @@
         <section class="Footer">
             <h1>Dummy website made just to practice</h1>
         </section>
+        <script src="../Scripts/searchHeader.js"></script>
         <script src="../Scripts/clock.js"></script>
     </body>
 </html>

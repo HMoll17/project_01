@@ -1,73 +1,101 @@
-.Main{
-    position: relative;
-    padding-left: 7%;
-    padding-right: 7%;
-    background: url("../../Assets/Space.png");
+.MainBackground{
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url("../../Assets/Dragon.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
-    min-height: 100vh;
-}
-
-.MainContent{
-    background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-.Desc1{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-.Desc1Img{
-    width: 50%;
-    color: white;
-    overflow: hidden;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.Desc1Txt{
-    overflow: scroll;
-    width: 45%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
-.Desc2{
+.Main{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.More{
-    height: 250px;
-    margin-top: 30px;
-    border-top: 2px solid white;
+.Titulo{
+    text-align: center;
+}
+
+.Titulo h1{
+    color: white;
+    font-size: 3em;
+    margin: 0px;
+}
+
+.Image1{
+    height: 500px;
+    width: 70%;
+    color: white;
+    border-radius: 30px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.Desc1{
+    margin-top: 30px;
+    color: white;
+    display: flex;
+}
+
+.Desc1Img{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Desc1Img img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Desc1Txt{
+    width: 45%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: center;
+}
+
+.Desc2{
+    margin-top: 30px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    text-align: center;
+    color: white;
+}
+
+.More{
+    height: 250px;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 3px solid white;
+    display: flex;
 }
 
 .MoreItem{
     height: 100%;
     width: 50%;
-    overflow: hidden;
+    color: white;
     display: flex;
-    align-items: center;
 }
 
 .MoreItemImg{
     height: 100%;
     width: 50%;
-    color: white;
     border-radius: 30px;
     overflow: hidden;
     display: flex;
@@ -75,24 +103,27 @@
     justify-content: center;
 }
 
-.MoreItemTitle{
+.MoreItemImg img{
     height: 100%;
+}
+
+.MoreItemLink{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.MoreItemTitle a{
+.MoreItemLink a{
     color: white;
 }
 
-.MoreItemTitle a:hover{
+.MoreItemLink a:hover{
     font-size: 1.5em;
     color: gold;
 }
 
-.MoreItemTitle a:active{
+.MoreItemLink a:active{
     color: red;
 }
 
@@ -110,26 +141,22 @@
     }
 
     .More{
-        height: 500px;
-        border: none;
         flex-direction: column;
-        justify-content: space-between;
+        height: 500px;
     }
-    
+
     .MoreItem{
-        height: 49%;
+        height: 50%;
         width: 100%;
-        border-top: 2px solid white;
         flex-direction: column-reverse;
     }
 
     .MoreItemImg{
-        height: 80%;
         width: 100%;
+        height: 80%;
     }
 
-    .MoreItemTitle{
-        height: 20%;
+    .MoreItemLink{
         width: 100%;
     }
 }
